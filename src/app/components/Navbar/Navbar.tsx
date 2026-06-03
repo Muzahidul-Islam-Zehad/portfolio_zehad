@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { FaDownload } from "react-icons/fa";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 w-full z-50 bg-surface-glass backdrop-blur-md border-b border-on-surface">
@@ -27,10 +28,10 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/experience"
+            href="/achievements"
             className="text-on-surface-variant hover:text-primary transition-colors duration-200"
           >
-            Experience
+            Achievements
           </Link>
 
           <Link
@@ -42,8 +43,10 @@ export default function Navbar() {
         </div>
 
         {/* resume download Button */}
-        <button className="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-semibold hover:opacity-80 transition-opacity active:scale-95 cursor-pointer">
-          Download Resume
+        
+        <button className="bg-primary-container text-on-surface px-4 py-2 rounded-md font-semibold text-sm cursor-pointer transition-all duration-300 hover:shadow-[0_0_25px_rgba(14,165,233,0.6)] hover:scale-105 active:scale-95 flex flex-row items-center gap-2 aspect-auto ">
+          <p> <FaDownload /></p>
+          <p className="hidden md:block">Download Resume</p>
         </button>
       </div>
     </nav>
