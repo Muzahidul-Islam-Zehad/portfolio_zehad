@@ -2,7 +2,7 @@
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 w-full z-50 bg-surface-glass backdrop-blur-md border-b border-subtle">
+    <nav className="sticky top-0 w-full z-50 bg-surface-glass backdrop-blur-md border-b border-on-surface">
       <div className="flex justify-between items-center px-4 h-16 max-w-container-max mx-auto">
 
         {/* Logo */}

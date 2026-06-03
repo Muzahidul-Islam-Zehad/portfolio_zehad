@@ -21,7 +21,10 @@ export default function RootLayout({
       data-theme="light"
       className={` h-full antialiased ${geist.variable} ${jetbrains.variable} ${inter.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-neutral text-neutral-100">
+      <body className="min-h-full flex flex-col bg-neutral text-neutral-100 relative overflow-hidden">
+        <div className="glow-sphere animate-blob-1 absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary rounded-full"></div>
+
+        <div className="glow-sphere animate-blob-2 absolute bottom-0 left-1/6 w-[400px] h-[400px] bg-tertiary rounded-full"></div>
         <Navbar />
         <section className="min-h-[calc(100vh-170px)]">
           {children}
