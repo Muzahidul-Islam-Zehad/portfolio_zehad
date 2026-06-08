@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="glow-sphere animate-blob-2 absolute bottom-0 left-1/6 w-[400px] h-[400px] bg-tertiary rounded-full"></div>
         </div>
         <Navbar />
-        <section className="min-h-[calc(100vh-170px)]">
+        <section className="min-h-[calc(100vh-170px)] overflow-x-hidden">
           {children}
         </section>
         <Footer />
