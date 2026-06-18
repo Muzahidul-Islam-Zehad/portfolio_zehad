@@ -23,8 +23,8 @@ export default function BackendTechnologies() {
                     <span className="text-3xl">🔧</span>
                 </div>
                 <div>
-                    <h3 className="text-2xl font-semibold text-white">Backend Systems</h3>
-                    <p className="text-slate-400">Scalable APIs and microservices</p>
+                    <h3 className="text-2xl font-heading font-semibold text-white">Backend Systems</h3>
+                    <p className="text-secondary font-body">Scalable APIs and microservices</p>
                 </div>
             </div>
 

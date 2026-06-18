@@ -1,5 +1,8 @@
+import { FaDatabase } from "react-icons/fa6";
 import BackendTechnologies from "./BackendTechnologies";
 import FrontendTechnologies from "./FrontendTechnologies";
+import { VscAzureDevops } from "react-icons/vsc";
+import StorageAndOrm from "./StorageAndOrm";
 
 // components/TechnicalExpertise.tsx
 export default function TechnicalExpertise() {
@@ -28,38 +31,13 @@ export default function TechnicalExpertise() {
                 <BackendTechnologies />
 
                 {/* Database & ORM */}
-                <div className="lg:col-span-5 bg-slate-900/50 border border-slate-700/50 rounded-3xl p-8 hover:border-emerald-500/30 transition-all duration-300">
-                    <div className="flex items-center gap-4 mb-8">
-                        <div className="w-12 h-12 bg-linear-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center">
-                            <span className="text-3xl">🗄️</span>
-                        </div>
-                        <div>
-                            <h3 className="text-2xl font-semibold text-white">Data & Storage</h3>
-                            <p className="text-slate-400">Reliable data architecture</p>
-                        </div>
-                    </div>
-
-                    <div className="space-y-4">
-                        <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl">
-                            <span className="font-medium">PostgreSQL + Prisma</span>
-                            <span className="text-emerald-400 text-sm font-bold">Expert</span>
-                        </div>
-                        <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl">
-                            <span className="font-medium">MongoDB + Mongoose</span>
-                            <span className="text-emerald-400 text-sm font-bold">Advanced</span>
-                        </div>
-                        <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl">
-                            <span className="font-medium">Redis</span>
-                            <span className="text-emerald-400 text-sm font-bold">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
+                <StorageAndOrm />
 
                 {/* DevOps & Tools */}
                 <div className="lg:col-span-7 bg-slate-900/50 border border-slate-700/50 rounded-3xl p-8 hover:border-amber-500/30 transition-all duration-300">
                     <div className="flex items-center gap-4 mb-8">
                         <div className="w-12 h-12 bg-linear-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center">
-                            <span className="text-3xl">🚀</span>
+                            <span className="text-3xl"><VscAzureDevops /></span>
                         </div>
                         <div>
                             <h3 className="text-2xl font-semibold text-white">DevOps & Tooling</h3>

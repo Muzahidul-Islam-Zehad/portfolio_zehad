@@ -45,8 +45,8 @@ export default function FrontendTechnologies() {
                     <span className="text-3xl">⚡</span>
                 </div>
                 <div>
-                    <h3 className="text-2xl font-semibold text-white">Frontend Architecture</h3>
-                    <p className="text-slate-400">Modern, performant and accessible user interfaces</p>
+                    <h3 className="text-2xl font-heading font-semibold text-white">Frontend Architecture</h3>
+                    <p className="text-secondary font-body">Modern, performant and accessible user interfaces</p>
                 </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
