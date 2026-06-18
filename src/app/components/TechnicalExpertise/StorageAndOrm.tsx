@@ -18,7 +18,7 @@ export default function StorageAndOrm() {
             </div>
 
             <div className="space-y-4">
-                <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl font-label">
+                <div className="flex justify-between items-center bg-slate-800/50 p-2 rounded-2xl font-label">
                     <div className="flex flex-wrap gap-2">
                         <div className="font-medium bg-transparent border border-primary rounded-2xl px-3 py-1 flex flex-row items-center gap-1 ">
                             <span className="text-blue-500 text-lg"><BiLogoPostgresql /></span> <span>PostgreSQL</span>
@@ -29,7 +29,7 @@ export default function StorageAndOrm() {
                     </div>
                     <span className="text-tertiary text-sm font-bold">Expert</span>
                 </div>
-                <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl font-label">
+                <div className="flex justify-between items-center bg-slate-800/50 p-2 rounded-2xl font-label">
                     <div className="flex flex-wrap gap-2">
                         <div className="font-medium bg-transparent border border-primary rounded-2xl px-3 py-1 flex flex-row items-center gap-1">
                             <span className="text-green-500 text-lg">
@@ -46,7 +46,7 @@ export default function StorageAndOrm() {
                     </div>
                     <span className="text-tertiary text-sm font-bold">Advanced</span>
                 </div>
-                <div className="flex justify-between items-center bg-slate-800/50 p-4 rounded-2xl font-label">
+                <div className="flex justify-between items-center bg-slate-800/50 p-2 rounded-2xl font-label">
                     <div className="flex flex-wrap gap-2">
                         <div className="font-medium bg-transparent border border-primary rounded-2xl px-3 py-1 flex flex-row items-center gap-1">
                             <span className="text-red-500 text-lg">
