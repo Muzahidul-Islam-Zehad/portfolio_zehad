@@ -84,6 +84,7 @@
     z-index: -1;
 }
 
+
 @keyframes blobOne {
   0% {
     transform: translate(-20vw, -10vh) scale(1);
@@ -126,4 +127,31 @@
 
 .animate-blob-2 {
   animation: blobTwo 35s ease-in-out infinite;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;     
+  scroll-padding-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1326;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #89ceff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
 }

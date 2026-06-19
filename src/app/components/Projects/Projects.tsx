@@ -4,7 +4,7 @@ import { projects } from './ProjectList';
 
 export default function Projects() {
     return (
-        <section id="projects" className="max-w-container-max mx-auto py-4 mt-4">
+        <section id="projects" className="max-w-container-max mx-auto py-8 mt-8">
 
             {/* Projects Header */}
             <div className="mb-8 text-center md:text-left">

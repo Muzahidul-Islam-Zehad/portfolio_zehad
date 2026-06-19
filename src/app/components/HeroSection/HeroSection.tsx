@@ -6,7 +6,7 @@ import FloatingSkill from './FloatingSkill'
 
 export default function HeroSection() {
     return (
-        <section className="max-w-container-max mx-auto flex flex-col-reverse md:flex-row items-center gap-8 py-12">
+        <section id="home" className="max-w-container-max mx-auto flex flex-col-reverse md:flex-row items-center gap-8 py-12">
             <div className="text-center md:text-left">
                 <h6 className="text-sm font-label text-primary uppercase">
                     --- Full Stack Developer

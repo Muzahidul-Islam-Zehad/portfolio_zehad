@@ -39,7 +39,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section id="contact" className="relative max-w-container-max mx-auto py-20">
+        <section id="contact" className="relative max-w-container-max mx-auto py-8 mt-8">
 
             <div className="flex flex-col items-center text-center md:items-start md:text-left mb-8">
                 <p className="font-label text-sm text-primary mb-3">
@@ -192,13 +192,13 @@ const ContactSection = () => {
                             </div>
                         </Link>
 
-                        <Link href="https://twitter.com" target="_blank " className="glass-card p-[--spacing-card-padding] rounded-xl flex items-center gap-4 group">
+                        <Link href="https://www.facebook.com/kaziZehad.FUZU" target="_blank " className="glass-card p-[--spacing-card-padding] rounded-xl flex items-center gap-4 group">
                             <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-border-subtle group-hover:border-tertiary transition-colors">
                                 <span className="text-xl text-tertiary"><FaShareAlt /></span>
                             </div>
                             <div>
-                                <p className="font-label text-text-muted mb-1">TWITTER / X</p>
-                                <p className="font-body font-bold text-on-surface text-xs md:text-base">https://twitter.com</p>
+                                <p className="font-label text-text-muted mb-1">Facebook</p>
+                                <p className="font-body font-bold text-on-surface text-xs md:text-base">https://www.facebook.com/kaziZehad.FUZU</p>
                             </div>
                         </Link>
                     </div>
