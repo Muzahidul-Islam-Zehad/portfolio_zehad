@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -24,7 +24,7 @@ export default function Footer() {
 
             {/* GitHub */}
             <Link
-              href="https://github.com"
+              href="https://github.com/Muzahidul-Islam-Zehad"
               target="_blank"
               className="flex flex-wrap items-center justify-center gap-6">
               <div className="flex flex-row items-center gap-2 text-sm text-on-surface-variant transition-colors hover:text-primary">
@@ -40,7 +40,7 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/kmiz"
               target="_blank"
               className="flex flex-wrap items-center justify-center gap-6">
               <div className="flex flex-row items-center gap-2 text-sm text-on-surface-variant transition-colors hover:text-primary">
@@ -55,22 +55,22 @@ export default function Footer() {
 
             {/* X (Twitter) */}
             <Link
-              href="https://x.com"
+              href="https://www.facebook.com/kaziZehad.FUZU"
               target="_blank"
               className="flex flex-wrap items-center justify-center gap-6">
               <div className="flex flex-row items-center gap-2 text-sm text-on-surface-variant transition-colors hover:text-primary">
                 <p>
-                  <FaXTwitter />
+                  <FaFacebook />
                 </p>
                 <p>
-                  X
+                  Facebook
                 </p>
               </div>
             </Link>
 
             {/* Email */}
             <Link
-              href="mailto:hello@example.com"
+              href="mailto:zehadkazi88@gmail.com"
               className="flex flex-wrap items-center justify-center gap-6">
               <div className="flex flex-row items-center gap-2 text-sm text-on-surface-variant transition-colors hover:text-primary">
                 <p>

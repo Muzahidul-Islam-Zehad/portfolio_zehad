@@ -14,14 +14,16 @@ export default function Buttons() {
                     View Projects
                 </div>
             </button>
-            <button type="button" className="outline-1 outline-secondary px-4 py-2 rounded capitalize font-medium cursor-pointer text-primary hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]  active:scale-95 transition-all duration-100 aspect-auto bg-transparent hover:text-on-surface flex flex-row items-center gap-2 justify-between">
+
+            {/* download resume */}
+            <a href="https://drive.google.com/uc?export=download&id=1QBaCLvYvF8bxpI1EQglntMTLb93Bjv5r" className="outline-1 outline-secondary px-4 py-2 rounded capitalize font-medium cursor-pointer text-primary hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]  active:scale-95 transition-all duration-100 aspect-auto bg-transparent hover:text-on-surface flex flex-row items-center gap-2 justify-between">
                 <div className="font-bold text-base">
                     <FaDownload />
                 </div>
                 <div className="hidden lg:block">
                     Download Resume
                 </div>
-            </button>
+            </a>
 
             <button type="button" className="outline-1 outline-secondary px-4 py-2 rounded-full capitalize font-medium cursor-pointer text-primary hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]  active:scale-95 transition-all duration-100 aspect-auto bg-transparent hover:text-on-surface flex flex-row items-center gap-2 justify-between">
                 <div>

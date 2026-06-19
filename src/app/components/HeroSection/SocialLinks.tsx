@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import React from 'react'
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -6,22 +7,17 @@ import { FaXTwitter } from 'react-icons/fa6'
 const socialLinks = [
   {
     name: 'Facebook',
-    url: '',
+    url: 'https://www.facebook.com/kaziZehad.FUZU',
     icon: <FaFacebook />,
   },
   {
-    name: 'Twitter',
-    url: '',
-    icon: <FaXTwitter />,
-  },
-  {
     name: "LinkedIn",
-    url: '',
+    url: 'https://www.linkedin.com/in/kmiz',
     icon: <FaLinkedin />,
   },
   {
     name: "GitHub",
-    url: '',
+    url: 'https://github.com/Muzahidul-Islam-Zehad',
     icon: <FaGithub />,
   }
 ]

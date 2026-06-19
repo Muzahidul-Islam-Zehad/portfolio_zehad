@@ -11,21 +11,21 @@ export default function NavLinks() {
             </Link>
 
             <Link
-                href="/projects"
+                href="#projects"
                 className="text-on-surface-variant hover:text-primary transition-colors duration-200"
             >
                 Projects
             </Link>
 
             <Link
-                href="/achievements"
+                href="#achievements"
                 className="text-on-surface-variant hover:text-primary transition-colors duration-200"
             >
                 Achievements
             </Link>
 
             <Link
-                href="/contact"
+                href="#contact"
                 className="text-on-surface-variant hover:text-primary transition-colors duration-200"
             >
                 Contact

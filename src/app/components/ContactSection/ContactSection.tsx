@@ -39,7 +39,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section className="relative max-w-container-max mx-auto py-20">
+        <section id="contact" className="relative max-w-container-max mx-auto py-20">
 
             <div className="flex flex-col items-center text-center md:items-start md:text-left mb-8">
                 <p className="font-label text-sm text-primary mb-3">
