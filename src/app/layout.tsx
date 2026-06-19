@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -24,9 +23,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-neutral text-neutral-100">
 
         <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-          <div className="glow-sphere animate-blob-1 absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary rounded-full"></div>
+          <div className="glow-sphere animate-blob-1 absolute top-1/4 right-0 w-125 h-125 bg-primary rounded-full"></div>
 
-          <div className="glow-sphere animate-blob-2 absolute bottom-0 left-1/6 w-[400px] h-[400px] bg-tertiary rounded-full"></div>
+          <div className="glow-sphere animate-blob-2 absolute bottom-0 left-1/6 w-100 h-100 bg-tertiary rounded-full"></div>
         </div>
         <Navbar />
         <section className="min-h-[calc(100vh-170px)] overflow-x-hidden">

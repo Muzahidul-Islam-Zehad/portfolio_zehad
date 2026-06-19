@@ -1,7 +1,7 @@
-// components/ProjectCard.tsx
-import React from 'react';
+import { CiStreamOn } from 'react-icons/ci';
 import { Project } from './ProjectList';
 import Link from 'next/link';
+import { FaFileCode } from 'react-icons/fa6';
 
 
 type ProjectCardProps = {
@@ -78,18 +78,22 @@ const MinimalCardContent = ({ project }: { project: Project }) => (
             {project.liveDemo && (
                 <Link
                     href={project.liveDemo}
-                    className="flex items-center gap-2 text-primary hover:text-primary-fixed font-medium border border-primary px-3 py-1 rounded-full transition-all duration-300  hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]"
+                    className="flex flex-row items-center justify-between gap-2 text-primary hover:text-primary-fixed font-medium border border-primary px-3 py-1 rounded-full transition-all duration-300  hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]"
                 >
-                    Live URL
+                    <span className='text-3xl'><CiStreamOn /></span>
+                    <span className="hidden lg:block">Live URL</span>
+                    
                 </Link>
             )}
             {project.sourceCode && (
                 <Link
                     href={project.sourceCode}
                     // todo: glow button
-                    className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface font-medium border border-on-surface-variant px-3 py-1 rounded-full transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]"
+                    className="flex flex-row items-center justify-between gap-2 text-on-surface-variant hover:text-on-surface font-medium border border-on-surface-variant px-3 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]"
                 >
-                    Source Code & Details
+                    <span className='text-3xl'><FaFileCode /></span>
+                    <span className="hidden lg:block">Source Code & Details</span>
+                    
                 </Link>
             )}
         </div>
