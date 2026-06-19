@@ -74,7 +74,7 @@ const MinimalCardContent = ({ project }: { project: Project }) => (
         </div>
 
         {/* links */}
-        <div className="flex gap-5 text-sm">
+        <div className="flex gap-5 text-sm font-label">
             {project.liveDemo && (
                 <Link
                     href={project.liveDemo}

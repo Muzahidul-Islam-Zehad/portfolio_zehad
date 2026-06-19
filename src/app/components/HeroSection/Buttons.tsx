@@ -25,11 +25,13 @@ export default function Buttons() {
 
             <button type="button" className="outline-1 outline-secondary px-4 py-2 rounded-full capitalize font-medium cursor-pointer text-primary hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]  active:scale-95 transition-all duration-100 aspect-auto bg-transparent hover:text-on-surface flex flex-row items-center gap-2 justify-between">
                 <div>
-                    <div className="w-3 h-3  bg-green-500 shadow-green-500 shadow-2xl rounded-full animate-pulse">
+                    <div className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75" />
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-tertiary" />
                     </div>
                 </div>
                 <div className="">
-                   Contact Me
+                    Contact Me
                 </div>
             </button>
         </div>
