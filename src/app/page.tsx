@@ -1,5 +1,5 @@
 import HeroSection from "./components/HeroSection/HeroSection";
-import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/Projects/Projects";
 import TechnicalExpertise from "./components/TechnicalExpertise/TechnicalExpertise";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <TechnicalExpertise />
+        <Projects /> 
       </main>
 
     </div>
