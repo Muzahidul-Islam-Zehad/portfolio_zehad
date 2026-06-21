@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { BiSolidCopy } from 'react-icons/bi';
 import { IoMdSend } from 'react-icons/io';
 import { MdEmail, MdHub } from 'react-icons/md';
@@ -9,23 +9,42 @@ import { BsTerminalFill } from 'react-icons/bs';
 import { FaShareAlt } from 'react-icons/fa';
 import { AiOutlineCheckCircle, AiOutlineLoading3Quarters } from 'react-icons/ai';
 import Link from 'next/link';
+import { sendContactEmail } from './SendMessage';
 
 const ContactSection = () => {
-    const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+    const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
     const [copied, setCopied] = useState(false);
+    const [message, setMessage] = useState('');
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e : any) => {
         e.preventDefault();
+        const formData = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value,
+        }
+
+        // console.log(formData)
         setFormStatus('loading');
+        setMessage('');
 
-        setTimeout(() => {
+        const result = await sendContactEmail(formData);
+
+        if (result.success) {
             setFormStatus('success');
-            (e.target as HTMLFormElement).reset();
+            setMessage(result.message);
+            e.target.reset();       
+        } else {
+            setFormStatus('error');
+            setMessage(result.message);
+        }
 
-            setTimeout(() => {
-                setFormStatus('idle');
-            }, 3000);
-        }, 1500);
+        // Auto hide message after 5 seconds
+        setTimeout(() => {
+            setFormStatus('idle');
+            setMessage('');
+        }, 5000);
     };
 
     const copyToClipboard = (text: string, e: React.MouseEvent<HTMLButtonElement>) => {
@@ -197,7 +216,7 @@ const ContactSection = () => {
                                 <span className="text-xl text-tertiary"><FaShareAlt /></span>
                             </div>
                             <div>
-                                <p className="font-label text-text-muted mb-1">Facebook</p>
+                                <p className="font-label text-text-muted mb-1">FACEBOOK</p>
                                 <p className="font-body font-bold text-on-surface text-xs md:text-base">https://www.facebook.com/kaziZehad.FUZU</p>
                             </div>
                         </Link>
