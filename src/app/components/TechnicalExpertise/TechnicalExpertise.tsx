@@ -6,7 +6,7 @@ import DevOpsAndTools from "./DevOpsAndTools";
 // components/TechnicalExpertise.tsx
 export default function TechnicalExpertise() {
     return (
-        <section className="max-w-container-max mx-auto py-4">
+        <section id="expertise" className="max-w-container-max mx-auto py-4">
             {/* Header */}
             <div className="mb-8 text-center md:text-left">
                 <p className="font-label text-sm text-primary mb-3">
